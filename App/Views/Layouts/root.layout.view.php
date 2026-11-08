@@ -22,6 +22,7 @@
                 <li><a href="<?= $link->url('home.index') ?>#about">O kaviarni</a></li>
                 <li><a href="<?= $link->url('home.index') ?>#gallery">Galéria</a></li>
                 <li><a href="<?= $link->url('home.adoption') ?>"<?= ($_GET['a'] ?? '') === 'adoption' ? ' aria-current="page"' : '' ?>>Adopcie</a></li>
+                <li><a href="<?= $link->url('cat.index') ?>"<?= ($_GET['c'] ?? '') === 'cat' ? ' aria-current="page"' : '' ?>>Správa mačiek</a></li>
                 <li><a href="<?= $link->url('home.index') ?>#contact">Kontakt</a></li>
                 <li><a href="<?= $link->url('auth.login') ?>">Prihlásiť</a></li>
                 <li><a class="nav-button" href="<?= $link->url('auth.login') ?>">Registrácia</a></li>

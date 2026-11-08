@@ -233,6 +233,17 @@ nav .nav-button:hover {
     padding-inline: 12px;
 }
 
+.age-fields {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.age-field label {
+    display: block;
+}
+
 .cat-info h2 {
     margin: 0 0 6px;
     font-family: Georgia, "Times New Roman", serif;

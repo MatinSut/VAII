@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\Cat;
 use Framework\Core\BaseController;
 use Framework\Http\Request;
 use Framework\Http\Responses\Response;
@@ -43,6 +44,6 @@ class HomeController extends BaseController
 
     public function adoption(Request $request): Response
     {
-        return $this->html();
+        return $this->html(['cats' => Cat::getAll(null, [], '`id` ASC')]);
     }
 }

@@ -4,6 +4,7 @@ services:
     image: ghcr.io/thevajko/vaii-web-server:main
     environment:
       - APACHE_DOCUMENT_ROOT=/var/www/html/public
+      - XDEBUG_MODE=off
     volumes:
       - ./../:/var/www/html/
     ports:

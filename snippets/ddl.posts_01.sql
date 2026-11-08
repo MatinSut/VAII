@@ -1,0 +1,5 @@
+CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    text TEXT,
+    picture VARCHAR(300) NOT NULL
+);
